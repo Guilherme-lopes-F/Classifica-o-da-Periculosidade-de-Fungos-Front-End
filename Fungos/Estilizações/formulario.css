@@ -71,7 +71,7 @@ input[type="radio"] {
     cursor: pointer;
     height: 20px;
     width: 20px;
-    display: f;
+    
     
     
 }
@@ -97,4 +97,5 @@ input[type="radio"] {
     font-family: monospace;
     transform: translateY(3px);
 }
+
  
