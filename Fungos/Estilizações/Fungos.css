@@ -1,0 +1,154 @@
+
+body{
+    
+    background:linear-gradient(to bottom right, black, gray);
+    z-index: 1;
+    
+
+}
+h1,p{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 15vh;
+    font-weight:bolder;
+    font-size: 50px;
+}
+p{
+    font-size: 23px;
+}
+.botao{
+
+    position: fixed;
+    bottom: 50%;
+    right: 2%;
+    width: 120px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 16px / 24px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color:dodgerblue;
+    transition: 0.3s ease;
+}
+.botao:hover{
+    background-color: steelblue;
+    color: black;
+}
+.cartoes{
+    display: flex;
+    gap:80px;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    z-index: 2;
+    margin-bottom: 120px;
+   
+    
+}
+
+.cartao{
+    margin: 50px;
+    background-color: rgb(0, 0, 0);
+    width:15vw;
+    height:40vh;
+    border-radius: 14px;
+    border: 1px solid white;
+    box-shadow: rgba(50, 50, 93, 0.8) 0px 50px 100px -20px, rgba(0, 0, 0, 0.9) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 25vh;
+    transition: 0.9s;
+}
+
+
+.bt{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    background: none ;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 150%;
+    font-family:sans-serif;
+    transition: 0.9s ease;
+}
+.descricao{
+    margin-top: 10px;
+    font-size: large;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+.cartao.c1:hover .descricao{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.cartao.c1:hover{
+    background-color: black;
+    transform: translateY(-3vh) translateX(1vw);
+    box-shadow: 0 0 10px deepskyblue,0 0 10px aqua, 0 0 40px lightcyan;
+}
+
+.cartao.c2:hover{
+    background-color: black;
+    transform: translateY(-3vh) translateX(1vw);
+    box-shadow: 0 0 10px crimson,0 0 10px salmon, 0 0 40px lightcoral;
+}
+.cartao.c2:hover .descricao{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.navegation{
+    position: fixed;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    gap: 10px;
+    z-index: 2;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid white ;
+    border-radius: 10px;
+}
+
+nav>a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 10px;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+nav>a:hover{
+    background-color: steelblue;
+    transform: scale(1.1);
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    background:linear-gradient(to bottom right, black, gray);
+    color: white;
+    text-align: center;
+    border-top: 1px solid rgb(0, 0, 0);
+}

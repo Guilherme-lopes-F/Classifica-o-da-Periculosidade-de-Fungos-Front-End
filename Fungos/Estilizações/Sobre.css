@@ -1,0 +1,92 @@
+body{
+    
+    background:linear-gradient(to bottom right,midnightblue ,dimgray);
+    z-index: 1;
+    
+
+}
+
+.formato{
+    border-radius: 13px;
+    width: 60%;   
+    margin: 20px auto;        
+    padding: 30px 40px;   
+    box-shadow: 0 0 10px silver,0 0 10px gray;
+    z-index: 2;
+    margin-top:50px;
+}
+h1{
+    text-align: center;
+    font-size:40px;
+    color:white;
+
+}
+p{
+    color:white;
+    font-size:20px;
+    text-align: justify;
+}
+.explicacao{
+    color:dodgerblue;
+  
+}
+.integrantes{
+    display:flex;
+    flex-wrap: wrap;
+    gap:50px;
+    justify-content: space-between;
+}
+.integrantes>h1{
+    margin-left: 15%;
+}
+h2{
+    color:gold;
+}
+.m{
+    background-color: rgba(0, 0, 139, 0.1);
+    flex:0 1 40%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: 0.5s ease;
+    
+}
+
+
+.m:hover{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       transform: translateY(-3vh) translateX(1vw);
+       background-color: rgba(0, 0, 139, 0.3);
+
+  
+}
+a{
+    display:inline-block;
+    text-decoration: none;
+    color:rgb(107, 162, 184);
+    transition:0.5s ease;
+    margin-bottom:5px;
+}
+a:hover{
+    color:cyan;
+}
+.botao{
+
+    position: fixed;
+    bottom: 50%;
+    left: 2%;
+    width: 120px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 16px / 24px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color:dodgerblue;
+    transition: 0.3s ease;
+}
+.botao:hover{
+    background-color: steelblue;
+    color: black;
+}
